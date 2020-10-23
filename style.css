@@ -1,0 +1,62 @@
+ html {
+   background: transparent;
+   overflow: hidden;
+ }
+ 
+ body {
+   width: 768px;
+   height: 128px;
+   overflow: hidden;
+   margin: 0;
+ }
+ 
+ #grid1, #grid2 {
+   flow: horizontal-flow;
+   size: max-content;
+   margin: *;
+ }
+ 
+ #grid2 {
+   flow: horizontal;
+   border-spacing: 43dip;
+   position: absolute;
+   bottom: 32px;
+ }
+
+ 
+ #close {
+   width: 10px;
+   background-image: url(".\\images\\buttons\\close.png");
+ }
+ 
+ #close:active, #info:active {
+   background-size: cover;
+   background-position: 1px 1px 1px 1px;
+ }
+ 
+ #close:hover, #info:hover {
+   filter: brightness(10%) contrast(200%);
+ }
+ 
+ #info {
+   width: 10px;
+   background-image: url(".\\images\\buttons\\info.png");
+ }
+ 
+ .checkbox {
+   background-size: 32px;
+   background-size: cover;
+   background-image: url(".\\images\\checkboxes\\default.png");
+ }
+ 
+ .checkbox:hover {
+   background-image: url(".\\images\\checkboxes\\hover.png");
+ }
+ 
+ .checkbox:active {
+   background-position: 1px 1px 1px 1px;
+ }
+ 
+ .checkbox:checked {
+   background-image: url(".\\images\\checkboxes\\checked.png");
+ }

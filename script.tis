@@ -1,0 +1,42 @@
+var colors = [
+  "red", "blue", "green", 
+  "pink", "orange", "yellow",
+  "black", "white", "purple",
+  "brown", "cyan", "lime"
+];
+
+function add_crewmates() {
+  for (var i of 12) {
+    const file_name = colors[i] + ".png";
+    const src = ".\\images\\crewmates\\" + file_name;
+    $(div#grid1).$append(<div .box><img src="{src}" role='window-caption' ></img></div>);
+    $(div#grid2).append(<input|checkbox .checkbox />);
+  }
+}
+
+function self.ready() {
+  add_crewmates();
+  const w = self.intrinsicWidthMax();
+  const h = self.intrinsicHeight(w);
+  const (sw, sh) = view.screenBox(#frame, #dimension);
+  view.move((sw / 2) - (w / 2), (sh / 2) - (h / 2), w, h, true);
+  view.windowResizable = false;
+}
+
+view << event statechange { 
+  view.windowTopmost = true;
+};
+
+$(#close).on("click", function() {
+  view.close();
+}); 
+
+$(#info).on("click", function() {
+  view.msgbox(
+    #information,
+    "This Application uses Sciter Engine (https://sciter.com), copyright Terra Informatica Software, Inc.",
+    "About"
+  );
+  return true;
+});
+
