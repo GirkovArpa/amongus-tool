@@ -1,4 +1,4 @@
-# Among Us Checklist
+# Among Us Tool
 
 A helpful graphical overlay to help you keep track of potential impostors in Among Us.
 
